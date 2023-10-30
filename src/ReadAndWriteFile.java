@@ -16,6 +16,8 @@ public class ReadAndWriteFile {
                 os.write(bytes, 0, length);
                 totalBytes += length;
             }
+            is.close();
+            os.close();
             System.out.println(totalBytes);
 
         }catch (Exception e) {
